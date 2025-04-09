@@ -3,65 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Partia RABUSIE – Tradycja i Wolność</title>
+  <title>Partia LGBT – Tradycja i Wolność</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
     header {
-      background-color: #d62828;
+      background: linear-gradient(to right, #d62828, #9e1b1b);
       color: white;
-      padding: 30px;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
     nav {
       background-color: #003049;
       display: flex;
       justify-content: center;
-      padding: 12px;
+      gap: 30px;
+      padding: 15px;
     }
+
     nav a {
       color: white;
-      margin: 0 20px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #fcbf49;
     }
+
     .hero {
-      background: url('flag-poland.jpg') center/cover no-repeat;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png') center/cover no-repeat;
+      padding: 120px 20px;
       color: white;
       text-align: center;
-      padding: 100px 20px;
       background-blend-mode: darken;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.6);
     }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    .cta-button {
+      background-color: #fcbf49;
+      color: #003049;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 16px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1200px;
       margin: 0 auto;
     }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #003049;
+    }
+
+    .postulates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .postulate {
+      background: white;
+      border-left: 6px solid #d62828;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .candidates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .candidate-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .candidate-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .candidate-card h3 {
+      margin: 10px 0 5px;
+      color: #003049;
+    }
+
+    .candidate-card p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
     footer {
       background-color: #003049;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      margin-top: 60px;
     }
-    .cta-button {
-      background-color: #fcbf49;
-      color: #003049;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    h2 {
-      color: #003049;
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 1.5em;
+      }
+
+      .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -69,59 +166,70 @@
 
   <header>
     <h1>Partia LGBT</h1>
-    <p>Tradycja, Rodzina, Odpowiedzialność</p>
+    <p>Lojalność. Godność. Bezpieczeństwo. Tradycja.</p>
   </header>
 
   <nav>
+    <a href="#postulates">Postulaty</a>
+    <a href="#candidates">Kandydaci</a>
     <a href="#about">O Nas</a>
-    <a href="#program">Program</a>
-    <a href="#kandydaci">Kandydaci</a>
-    <a href="#dolacz">Dołącz</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="#contact">Kontakt</a>
   </nav>
 
   <section class="hero">
-    <h2>Silna Polska oparta na Wartościach</h2>
-    <p>Nowa droga dla odpowiedzialnych obywateli</p>
-    <a href="#dolacz" class="cta-button">Dołącz do nas</a>
+    <h2>Silna Polska. Tradycyjne Wartości.</h2>
+    <p>Dołącz do ruchu, który stawia Polskę na pierwszym miejscu.</p>
+    <a href="#contact" class="cta-button">Dołącz do nas</a>
+  </section>
+
+  <section id="postulates">
+    <h2>Nasze Postulaty</h2>
+    <div class="postulates-grid">
+      <div class="postulate">Silna rodzina jako fundament społeczeństwa</div>
+      <div class="postulate">Wzmocnienie obronności i służb mundurowych</div>
+      <div class="postulate">Ochrona suwerenności narodowej w UE</div>
+      <div class="postulate">Wsparcie dla małych firm i polskich rolników</div>
+      <div class="postulate">Promocja tradycyjnych wartości w edukacji</div>
+      <div class="postulate">Efektywna walka z korupcją i biurokracją</div>
+    </div>
+  </section>
+
+  <section id="candidates">
+    <h2>Nasi Kandydaci</h2>
+    <div class="candidates">
+      <div class="candidate-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jan Kowalski">
+        <h3>Jan Kowalski</h3>
+        <p>Lider w okręgu mazowieckim. Prawnik i działacz społeczny.</p>
+      </div>
+      <div class="candidate-card">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Anna Nowak">
+        <h3>Anna Nowak</h3>
+        <p>Ekonomistka z doświadczeniem w sektorze publicznym.</p>
+      </div>
+      <div class="candidate-card">
+        <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Tomasz Wiśniewski">
+        <h3>Tomasz Wiśniewski</h3>
+        <p>Samorządowiec z Podkarpacia. Obrońca tradycyjnych wartości.</p>
+      </div>
+    </div>
   </section>
 
   <section id="about">
-    <h2>O Partii LGBT</h2>
-    <p>Partia LGBT (Lojalność, Godność, Bezpieczeństwo, Tradycja) powstała z myślą o obywatelach, którzy wierzą w siłę rodziny, szacunek dla historii oraz odpowiedzialne przywództwo. Jesteśmy głosem ludzi, którzy chcą nowoczesnej Polski opartej na wartościach chrześcijańskich i narodowych.</p>
+    <h2>O Partii</h2>
+    <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+      Jesteśmy ruchem, który łączy konserwatyzm, dumę narodową i społeczną odpowiedzialność. Reprezentujemy obywateli, którzy wierzą w Polskę silną, sprawiedliwą i wierną tradycji. Wierzymy, że przyszłość kraju opiera się na wartościach, a nie na modnych ideologiach.
+    </p>
   </section>
 
-  <section id="program">
-    <h2>Nasz Program</h2>
-    <ul>
-      <li>Ochrona tradycyjnych wartości rodzinnych</li>
-      <li>Wzmocnienie suwerenności Polski w Unii Europejskiej</li>
-      <li>Bezpieczeństwo narodowe i silna armia</li>
-      <li>Wsparcie dla polskich przedsiębiorstw i rolników</li>
-      <li>Reforma edukacji z naciskiem na patriotyzm i historię</li>
-    </ul>
-  </section>
-
-  <section id="kandydaci">
-    <h2>Nasi Kandydaci</h2>
-    <p>Reprezentujemy różnorodne środowiska – od przedsiębiorców, przez nauczycieli, po działaczy społecznych. Łączy nas oddanie Polsce i wspólna wizja konserwatywnej przyszłości.</p>
-  </section>
-
-  <section id="dolacz">
-    <h2>Dołącz do Partii LGBT</h2>
-    <p>Chcesz mieć wpływ na przyszłość Polski? Dołącz do naszego ruchu – jako wolontariusz, członek partii lub darczyńca.</p>
-    <a href="#kontakt" class="cta-button">Zgłoś się</a>
-  </section>
-
-  <section id="kontakt">
+  <section id="contact">
     <h2>Kontakt</h2>
-    <p>Email: kontakt@partialgbt.pl</p>
-    <p>Telefon: +48 123 456 789</p>
-    <p>Adres: ul. Niepodległości 12, Warszawa</p>
+    <p style="text-align: center;">Email: kontakt@partiaLGBT.pl | Telefon: +48 123 456 789</p>
+    <p style="text-align: center;">Adres biura: ul. Niepodległości 12, Warszawa</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Partia LGBT – Wszystkie prawa zastrzeżone.</p>
+    <p>&copy; 2025 Partia LGBT. Wszelkie prawa zastrzeżone.</p>
   </footer>
 
 </body>
