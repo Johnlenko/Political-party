@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partia LGBT – Tradycja i Wolność</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003049;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('flag-poland.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      background-blend-mode: darken;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .cta-button {
+      background-color: #fcbf49;
+      color: #003049;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    h2 {
+      color: #003049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Partia LGBT</h1>
+    <p>Tradycja, Rodzina, Odpowiedzialność</p>
+  </header>
+
+  <nav>
+    <a href="#about">O Nas</a>
+    <a href="#program">Program</a>
+    <a href="#kandydaci">Kandydaci</a>
+    <a href="#dolacz">Dołącz</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Silna Polska oparta na Wartościach</h2>
+    <p>Nowa droga dla odpowiedzialnych obywateli</p>
+    <a href="#dolacz" class="cta-button">Dołącz do nas</a>
+  </section>
+
+  <section id="about">
+    <h2>O Partii LGBT</h2>
+    <p>Partia LGBT (Lojalność, Godność, Bezpieczeństwo, Tradycja) powstała z myślą o obywatelach, którzy wierzą w siłę rodziny, szacunek dla historii oraz odpowiedzialne przywództwo. Jesteśmy głosem ludzi, którzy chcą nowoczesnej Polski opartej na wartościach chrześcijańskich i narodowych.</p>
+  </section>
+
+  <section id="program">
+    <h2>Nasz Program</h2>
+    <ul>
+      <li>Ochrona tradycyjnych wartości rodzinnych</li>
+      <li>Wzmocnienie suwerenności Polski w Unii Europejskiej</li>
+      <li>Bezpieczeństwo narodowe i silna armia</li>
+      <li>Wsparcie dla polskich przedsiębiorstw i rolników</li>
+      <li>Reforma edukacji z naciskiem na patriotyzm i historię</li>
+    </ul>
+  </section>
+
+  <section id="kandydaci">
+    <h2>Nasi Kandydaci</h2>
+    <p>Reprezentujemy różnorodne środowiska – od przedsiębiorców, przez nauczycieli, po działaczy społecznych. Łączy nas oddanie Polsce i wspólna wizja konserwatywnej przyszłości.</p>
+  </section>
+
+  <section id="dolacz">
+    <h2>Dołącz do Partii LGBT</h2>
+    <p>Chcesz mieć wpływ na przyszłość Polski? Dołącz do naszego ruchu – jako wolontariusz, członek partii lub darczyńca.</p>
+    <a href="#kontakt" class="cta-button">Zgłoś się</a>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Email: kontakt@partialgbt.pl</p>
+    <p>Telefon: +48 123 456 789</p>
+    <p>Adres: ul. Niepodległości 12, Warszawa</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Partia LGBT – Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+</body>
+</html>
